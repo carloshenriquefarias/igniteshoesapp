@@ -21,11 +21,11 @@ export function Products({ data, brand }: Props) {
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
-                <ProductCard 
-                  data={item}
-                  onPress={() => navigate('details', { productId: item.id })} 
-                />
-              )}
+          <ProductCard 
+            data={item}
+            onPress={() => navigate('details', { productId: item.id })} 
+          />
+        )}
         numColumns={2}
         _contentContainerStyle={{ alignItems: 'center', paddingBottom: 20 }}
         showsVerticalScrollIndicator={false}
