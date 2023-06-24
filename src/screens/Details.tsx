@@ -46,6 +46,7 @@ export function Details() {
       });
 
       navigate('cart');
+      
     } catch (error) {
       toast.show({
         title: 'Não foi possível adicionar o produto no carrinho',
